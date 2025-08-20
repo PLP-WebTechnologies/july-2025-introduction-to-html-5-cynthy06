@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Enhanced Form</title>
+</head>
+<body>
+  <header>
+    <h1>Enhanced HTML5 Form</h1>
+    <nav>
+      <ul> <span>
+        <li><a href="#about">About</a></li>
+        <li><a href="#media">Media</a></li>
+        <li><a href="#form">Form</a></li></span>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="about">
+      <h2>About</h2>
+      <ul>
+        <li>Semantic layout</li>
+        <li>Table and lists</li>
+        <li>Media elements</li>
+        <li>Accessible HTML5 form</li>
+      </ul>
+      <table border="1">
+        <caption>Sample Pricing</caption>
+        <tr><th>Plan</th><th>Price</th></tr>
+        <tr><td>Basic</td><td>$9</td></tr>
+        <tr><td>Pro</td><td>$29</td></tr>
+      </table>
+    </section>
+
+    <section id="media">
+      <h2>Media</h2>
+      <img src="https://picsum.photos/300/150" alt="Sample image">
+      <audio controls>
+        <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg">
+      </audio>
+      <video controls width="300">
+        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+      </video>
+    </section>
+
+    <section id="form">
+      <h2>Registration Form</h2>
+      <form>
+        <label>First Name: <input type="text" name="first" placeholder="Jane" required></label><br>
+        <label>Last Name: <input type="text" name="last" placeholder="Doe" required></label><br>
+        <label>Email: <input type="email" name="email" placeholder="jane@example.com" required></label><br>
+        <label>Phone: <input type="tel" name="phone" placeholder="+254712345678" pattern="^\+[1-9]\d{1,14}$" required></label><br>
+        <label>DOB: <input type="date" name="dob" required></label><br>
+        <label>Password: <input type="password" name="pass" minlength="8" required></label><br>
+        <label>Website: <input type="url" name="site"></label><br>
+        <label>Country:
+          <select name="country" required>
+            <option value="">Choose...</option>
+            <option>Kenya</option>
+            <option>Uganda</option>
+          </select>
+        </label><br>
+        <label><input type="checkbox" name="terms" required> Agree to terms</label><br>
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>HTML5 form with validation and semantic structure.</p>
+  </footer>
+</body>
+</html>
